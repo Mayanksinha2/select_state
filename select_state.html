@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting State</title>
+    <script>
+        function put(){
+            option=document.forms[0].states.options[document.forms[0].states.selectedIndex].text;
+            txt=option;
+            document.forms[0].favorite.value=txt;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>
+            select your favourite browser:
+            <select name="states" onchange="put()">
+                <option>Andhra Pradesh</option>
+                <option>Arunachal Pradesh</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Delhi</option>
+                <option>Gujrat</option>
+                <option>Haryana</option>
+                <option>Himachal Pradesh</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madhya Pradesh</option>
+                <option>Meghalaya</option>
+                <option>Maharastra</option>
+                <option>Misorom</option>
+                <option>Orissa</option>
+                <option>Pondicherry</option>
+                <option>Punjab</option>
+                <option>Tamil Nadu</option>
+                <option>Tripura</option>
+                <option>Uttar Pradesh</option>
+            </select>
+        </p>
+        <p>
+            <h1>
+                You have selected
+                <input type="text" name="favorite" value=" ">
+            </h1>
+        </p>
+    </form>
+</body>
+</html>
